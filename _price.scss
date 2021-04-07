@@ -1,0 +1,68 @@
+.wrapper-main {
+	&__listprice {
+		position: relative;
+		z-index: 150;
+		font-size: 3vw;
+	}
+	&__listprice > a {
+		color: #f6971b;
+	}
+	&__activlink,
+	&__activlink2,
+	&__activlink3,
+	&__activlink4,
+	&__activlink5,
+	&__activlink6,
+	&__activlink7,
+	&__activlink8,
+	&__activlink9,
+	&__activlink10,
+	&__activlink11 {
+		font-size: 5vw;
+		display: block;
+	}
+	&__activlink:focus ~ &__price1,
+	&__activlink2:focus ~ &__price2,
+	&__activlink3:focus ~ &__price3,
+	&__activlink4:focus ~ &__price4,
+	&__activlink5:focus ~ &__price5,
+	&__activlink6:focus ~ &__price6,
+	&__activlink7:focus ~ &__price7,
+	&__activlink8:focus ~ &__price8,
+	&__activlink9:focus ~ &__price9,
+	&__activlink10:focus ~ &__price10,
+	&__activlink11:focus ~ &__price11 {
+		display: block;
+		//flex-direction: column;
+		//align-items: center;
+		@keyframes price {
+			0% {
+				position: relative;
+				left: -100%;
+			}
+			50% {
+				position: relative;
+				left: 0%;
+			}
+		}
+		animation: price 2s;
+	}
+
+	&__price {
+		display: none;
+	}
+
+	&__price1,
+	&__price2,
+	&__price3,
+	&__price4,
+	&__price5,
+	&__price6,
+	&__price7,
+	&__price8,
+	&__price9,
+	&__price10,
+	&__price11 {
+		display: none;
+	}
+}

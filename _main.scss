@@ -1,0 +1,158 @@
+.wrapper-main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 10vw 0 0 0;
+
+	//------------------ весь майн
+	&__content {
+		flex: 1 0 auto;
+		background: #0c1a2f;
+	}
+	//-----------------------фон мустанг
+	&__img-back {
+		position: relative;
+		z-index: 150;
+		max-width: 100%;
+		height: auto;
+		box-shadow: 0 0px 10px 5px #000;
+	}
+	//------------------------виды работ
+	&__list {
+		position: relative;
+		z-index: 150;
+		position: absolute;
+		top: 12vw;
+		left: 2vw;
+		color: #f6971b;
+		background: rgba($color: #0c1a2f, $alpha: 0.4);
+		border-radius: 1vw;
+	}
+
+	&__item {
+		padding: 2vw 0 0 3vw;
+
+		& > a {
+			color: #fff;
+			&:active {
+				color: #f6971b;
+			}
+			&:hover {
+				color: #f6971b;
+			}
+		}
+	}
+	&__vk > img {
+		width: 10%;
+		height: auto;
+		position: absolute;
+		right: 5vw;
+		top: 40vw;
+		z-index: 500;
+	}
+	//-------------текст
+	&__text {
+		margin: 0 2vw 0 2vw;
+		line-height: 1.2;
+		position: relative;
+		z-index: 300;
+	}
+
+	&__title,
+	&__title2 {
+		color: #f6971b;
+		margin: 1vw 0 0 0;
+	}
+
+	&__paragraf,
+	&__sale {
+		margin: 0 0 2vw 2vw;
+	}
+	.stocks-line {
+		border-bottom: 5px solid #fff;
+		margin: 0 0 1vw 0;
+	}
+
+	//------------лого вектор
+	&__logocar {
+		display: flex;
+		justify-content: center;
+		-webkit-align-items: flex-start;
+		position: fixed;
+		top: 50%;
+		opacity: 0.1;
+		padding: 0 0 2vw 0;
+		margin: 0 0 0 3vw;
+	}
+
+	&__imglogo {
+		width: 90vw;
+		height: auto;
+	}
+}
+@media (min-width: 320px) {
+	.wrapper-main {
+		&__paragraf,
+		&__sale {
+			font-size: 13px;
+		}
+	}
+}
+@media (min-width: 480px) {
+	.wrapper-main {
+		margin: 9vw 0 0 0;
+		&__paragraf,
+		&__sale {
+			font-size: 15px;
+		}
+		&__list {
+			font-size: 4vw;
+		}
+	}
+}
+@media (min-width: 600px) {
+	.wrapper-main {
+		margin: 10vw 0 0 0;
+		font-size: 3vw;
+		&__paragraf,
+		&__sale {
+			font-size: 18px;
+		}
+		&__content {
+		}
+		&__list {
+			font-size: 3vw;
+		}
+		&__img-back {
+		}
+	}
+}
+@media (min-width: 800px) {
+	.wrapper-main {
+		font-size: 3vw;
+		&__content {
+		}
+		&__list {
+			font-size: 3vw;
+		}
+		&__img-back {
+		}
+	}
+}
+
+@media (min-width: 1025px) {
+	.wrapper-main {
+		font-size: 3vw;
+		&__content {
+		}
+		&__list {
+			font-size: 3vw;
+		}
+		&__img-back {
+		}
+		&__vk > img {
+			right: 5vw;
+			top: 35vw;
+		}
+	}
+}

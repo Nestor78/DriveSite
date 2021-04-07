@@ -1,0 +1,49 @@
+.container {
+	display: inline-block;
+	margin: 0 auto;
+
+	&__foto {
+		display: -webkit-flex;
+		display: flex;
+		justify-content: -webkit-space-around;
+		justify-content: space-around;
+		margin: 0 0 1% 0;
+		cursor: zoom-in;
+		height: 30vw;
+
+		z-index: 300;
+		& > img {
+			width: 24%;
+			height: auto;
+		}
+	}
+
+	&__foto:focus {
+		position: fixed;
+		top: 10vw;
+		left: 10vw;
+		width: 80%;
+		height: auto;
+		z-index: 501;
+		transition: 1s;
+	}
+}
+@media (min-width: 320px) {
+}
+@media (min-width: 480px) {
+}
+@media (min-width: 600px) {
+	.container {
+		&__foto:focus {
+			width: auto;
+			height: 80%;
+			left: 30vw;
+		}
+	}
+}
+@media (min-width: 801px) {
+}
+@media (min-width: 1025px) {
+}
+@media (min-width: 1281px) {
+}

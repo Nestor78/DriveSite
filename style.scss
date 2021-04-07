@@ -1,0 +1,22 @@
+@font-face {
+	font-family: "NFS font";
+	src: url("fonts/nfs_font.eot");
+	src: local("☺"), url("fonts/nfs_font.woff") format("woff"), url("fonts/nfs_font.ttf") format("truetype"),
+		url("fonts/nfs_font.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "_nullstyle";
+@import "_header";
+@import "_main";
+@import "_gallery";
+@import "_contacts";
+@import "_price";
+@import "_footer";
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	height: 100%;
+}
